@@ -1,6 +1,21 @@
 #include "sort.h"
 
 /**
+ * swap - a funtion that swap two value in an array
+ * @i: pointer to first value
+ * @j: pointer to second value
+ */
+
+void swap(int *i, int *j)
+{
+        int tmp;
+
+        tmp = *i;
+        *i = *j;
+        *j = tmp;
+}
+
+/**
  * partition - divides an array or a partition into two parts and returns
  *             the pivot index using the Lomuto partition scheme
  * @array: the array to partition
